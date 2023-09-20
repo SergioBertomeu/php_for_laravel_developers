@@ -16,7 +16,23 @@
 </head>
 <body>
 <header>
-<h1><?=$greeting;?></h1>
+    <h1><?=$greeting;?></h1>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Completed</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Estudiar PHP</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
 </header>
 </body>
 </html>
