@@ -25,14 +25,19 @@
             <th>Description</th>
             <th>Completed</th>
         </tr>
+
+        <?php foreach ($tasks as $task):?>
         <tr>
-            <td>1</td>
-            <td>Estudiar PHP</td>
-            <td></td>
-            <td></td>
+            <td><?=$tasks->id;?></td>
+            <td><?=$tasks->title;?></td>
+            <td><?=$tasks->description;?></td>
+            <td><?=$tasks->completed;?></td>
         </tr>
+        <?php endforeach; ?>
+
+
+
     </table>
-    
-</header>
+ </header>
 </body>
 </html>
