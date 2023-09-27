@@ -1,21 +1,20 @@
 <?php
 
 
+use framework\Database\Database;
+
 require 'config.php';
 
 require 'app/helpers.php';
 
-require 'app/Task.php';
+
+$database = new Database($config); // -> Lsravel no utilitzem gairebé mai new -> DI i Containers
+
+$tasks = $database->selectAll('tasks');
+
+//$tasks =  Database::selectAll('tasks'); // Crida estàtica -> sense new
 
 
-$dbh = connectDB($config);
-
-
-$statement = $dbh->prepare('SELECT * FROM tasks;');
-
-$statement->execute();
-
-$tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
-
+//$tasks =  Task::selectAll('tasks'); -> Laravel Eloquent
 
 $greeting = greet();
