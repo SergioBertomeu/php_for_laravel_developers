@@ -13,5 +13,7 @@
             "email": "sbertomeu1@iesebre.com"
         }
     ],
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
 }

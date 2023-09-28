@@ -2,3 +2,4 @@
 $usuario = 'debian-sys-maint';
 $pass = 'enQOuqHhHjod5wHr';
 /vendor/
+.env
