@@ -1,13 +1,11 @@
 <?php
 
-namespace framework\Database;
+namespace Framework\Database;
 
 use PDO;
 
-
 class Connection
 {
-
     public static function make($config)
     {
         try {
@@ -15,9 +13,8 @@ class Connection
                 $config['databasetype'] . ':host=' . $config['host'] . ';dbname=' . $config['name'],
                 $config['user'],
                 $config['password']);
-
         } catch (\Exception $e) {
-            echo 'Error de conexio a la base de dades';
+            echo 'Error de connexió a la base de dades';
         }
     }
 }

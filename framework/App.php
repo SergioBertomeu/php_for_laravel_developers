@@ -3,19 +3,15 @@
 namespace Framework;
 
 use Exception;
+
 class App {
 
     private static $container = [];
-    // API
-    // Funcio BIND -> Setter -> Afergir un objecte nou a la meva app
-    // get -> getter
-    //getters i setters
 
     public static function bind($key, $value)
     {
         static::$container[$key] = $value;
     }
-
 
     public static function get($key)
     {
