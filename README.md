@@ -14,3 +14,4 @@ Creat gràcies a Sergi Tur (acacha)
 autoloads i no necessitar requires. Explicat com funciona el namespaces a
 PHP.
 - V0.5: Container -> Implementar D de SOLID Dependency Inversion Principle -> Inveerter -> Inversor Container -> APP
+- V0.6: Refactoritzar helpers per utilitzar composer autoloads
