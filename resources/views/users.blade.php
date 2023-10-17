@@ -6,7 +6,7 @@
     <header>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">
-                Tasks
+                Usuaris
             </h1>
         </div>
     </header>
@@ -35,13 +35,10 @@
                                     <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold
                                  text-gray-900 sm:pl-0">Id</th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold
-                                 text-gray-900">Title</th>
+                                 text-gray-900">Name</th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold
-                                text-gray-900">Description</th>
-                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold
-                                 text-gray-900">Completed</th>
-                                    <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
-                                        <span class="sr-only">Edit</span>
+                                text-gray-900">Email</th>
+
                                     </th>
                                 </tr>
                                 </thead>
@@ -49,19 +46,16 @@
 
 
 
-                                <?php foreach ($tasks as $task):?>
+                                <?php foreach ($users as $users):?>
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">L
-                                            <?=$task->id;?>
+                                            <?=$users->id;?>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                            <?=$task->title;?>
+                                            <?=$users->name;?>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                            <?=$task->description;?>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                            <?=$task->completed;?>
+                                            <?=$users->email;?>
                                     </td>
                                     <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                         <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
